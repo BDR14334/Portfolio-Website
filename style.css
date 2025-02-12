@@ -350,13 +350,14 @@ p{
     }
 
     p {
-        width: 415px;
-        margin: 0 -20px; 
+        max-width: 415px;
+        width: 100%;
+        margin: 0 auto;
         font-size: 1.6rem;
         line-height: 1.8;
         color: white;
-        margin-bottom: 20px;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .home-content h3 {
@@ -402,16 +403,6 @@ p{
 
     .home .home-content h1{
         font-size: 2.2rem;
-    }
-
-    p {
-        width: 415px;
-        margin: 0 -20px; 
-        font-size: 1.6rem;
-        line-height: 1.8;
-        color: white;
-        margin-bottom: 20px;
-        text-align: center;
     }
 
     span{
