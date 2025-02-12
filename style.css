@@ -125,6 +125,7 @@ nav{
     padding: 15px 0;
     align-items: center;
     transition: 0.2s linear;
+    font-size: 16px;
 }
 
 .dropdown .links a:hover{
@@ -260,6 +261,18 @@ p{
     .cancel{
         opacity: 1;
         pointer-events: visible;
+    }
+
+    .cancel {
+        opacity: 1;
+        pointer-events: visible;
+        position: absolute; 
+        top: 10px; 
+        right: 26px; 
+        transform: translateX(-10px); 
+        font-size: 3rem; 
+        font-weight: 6rem;
+        color: white; 
     }
 
     .home .home-content h1{
@@ -407,16 +420,16 @@ p{
     }
 
     .social-icons a{
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.6rem;
+        width: 3.7rem;
+        height: 3.7rem;
+        font-size: 2rem;
     }
 
     .btn{
         display: inline-block;
         margin: 0rem -0.15rem 1rem;
         border-radius: 4rem;
-        font-size:1.2rem;
+        font-size:15px;
         letter-spacing: 0.3rem;
         font-weight: 600;
     }
@@ -808,7 +821,7 @@ p{
         display: inline-block;
         margin: 0rem -0.15rem 1rem;
         border-radius: 4rem;
-        font-size:1.2rem;
+        font-size: 15px;
         letter-spacing: 0.3rem;
         font-weight: 600;
     }
