@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        
+    </head>
+    <body>
+        
+        <!-- <a href="#" class="logo">Brandon</a> -->
+        <nav>
+            <div class="nav-container">
+                <div class="links">
+                    <div class="link"><a href="#Home">Home</a></div>
+                    <div class="link"><a href="#Education">Education</a></div>
+                    <div class="link"><a href="#Experience">Experience</a></div>
+                    <div class="link"><a href="#Hobbies">Hobbies</a></div>
+                    <div class="link"><a href="#Contact">Contact</a></div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#Home">Home</a>
+                    <a href="#Education">Education</a>
+                    <a href="#Experience">Experience</a>
+                    <a href="#Hobbies">Hobbies</a>
+                    <a href="#Contact">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+        </nav> 
+        
+        <section class="home" id="Home">
+            <div class="home-img">
+                <img src="profile.jpg" alt="">
+            </div>
+            <div class="home-content">
+                <h1>My Name is <span>Brandon Robinson</span></h1>
+                <h3 class="typing-text"><span class="auto-type"></span></h3>
+                <p>Motivated and detail-oriented Computer Science student with a foundation in software development, web development, game development, and data science. Proficient with C++, JavaScript/React, C#, SQL, and R. Experienced through coursework and a software development internship, where I contributed to front-end development and cross-functional projects. Skilled in database management, data visualization, and problem-solving. Possessing technical, analytical, and project management skills, along with the ability to communicate effectively and work collaboratively. Actively seeking a full-time role.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/brandon-robinson-br38/">
+                        <i class="fa-brands fa-linkedin"></i> 
+                    </a>
+                    <a href="https://github.com/BDR14334/">
+                        <i class="fa-brands fa-github"></i> 
+                    </a>
+                </div>
+                <a href="#" class="btn">Hire me</a>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed(".auto-type",{
+                        strings : ["I'm a Software Developer", "I'm a Web Developer", "I'm a Web Designer", "I'm a Data Analyser", "I'm a Database Manager", "I'm Much More"],
+                        typeSpeed : 100,
+                        backSpeed : 100,
+                        loop : true
+                    })
+                </script>
+            </div>
+        </section>
+
+        <!--Education Section-->
+        <section class="Education" id="Education">
+            <div class="content">
+                <div class="title"><span>Major Coursework</span></div>
+                <div class="boxes">
+                    <a href="/Courses/DSA.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="topic">Data Structures and Algorithms (C++)</div>
+                        <p>Advanced C++, dynamic memory, data structures(Hash Tables, Trie, DoublyLinkedList, SafeArray)</p>
+                    </a>
+                    <a href="/Courses/DDM.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="topic">Database Design and Management (SQL)</div>
+                        <p>SQL, database design, ER diagrams, API development</p>
+                    </a>
+                    <a href="/Courses/GD.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="topic">Game Development II (C#)</div>
+                        <p>Unity, C#, RPG development, character creation, animation, inventory systems.</p>
+                    </a>
+                    <a href="/Courses/CO.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="topic">Computer Organization (Assembly)</div>
+                        <p>ARM V8 assembly, hardware-software interaction, computer architecture.</p>
+                    </a>
+                    <a href="/Courses/SDD.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="topic">Software Design and Development</div>
+                        <p>Software engineering, SRS document, architecture diagrams, test cases, group project</p>
+                    </a>
+                    <a href="/Courses/CG.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="topic">Computer Graphics (WebGL)</div>
+                        <p>WebGL programming, linear algebra, geometry, color theory, project-driven graphics development.</p>
+                    </a>
+                    <a href="/Courses/DS.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="topic">Data Science I (R)</div>
+                        <p>R studio, data cleaning, pivoting, visualization, linear regression, handling outliers, and statistical modeling.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+         <!--Experience Section-->
+         <section class="Experience" id="Experience">
+            <div class="content">
+                <div class="title"><span>Work Experience</span></div>
+                <div class="boxes">
+                    <a href="/Experience/SDI.html"  class="box">
+                        <div class="icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="topic">Software Development Intern</div>
+                        <h3 class="sub-heading">Hyatt Hotels Corporation | 06/2023 - 08/2023</h3>
+                        <ul>
+                            <li>Developed web components for one of the brands using JSX/React and version control with GitLab.</li>
+                            <li>Took initiative to successfully fix various bugs on multiple websites using JSX/React.</li>
+                            <li>Actively participated in daily team meetings discussing work facilitated the day prior and what to expect present day.</li>
+                            <li>Helped facilitate ideas and profound steps in creating an AI Booking/Tour Guide system for an internship group project business pitch presented to the company’s board of directors (2nd place).</li>
+                        </ul>
+                    </a>
+                    <a href="/Experience/ST.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <div class="topic">Senior Thesis Project</div>
+                        <h3 class="sub-heading">Carthage College | 08/2024 - 12/2024</h3>
+                        <ul>
+                            <li>Developed a Chrome extension to streamline the job application process by auto-filling forms with user-provided data using JavaScript, HTML, and CSS.</li>
+                            <li>Implemented features such as store and load data, including basic info, education and employment history, and short essay portions.</li>
+                            <li>Designed a “Generate Outline” feature that provides users with structured responses to common interview/essay questions, enhancing efficiency and preparation time.</li>
+                            <li>Optimized user experience by enabling extension management via Chrome’s side panel API.</li>
+                            <li>Tested and refined the app to ensure accuracy and reliability, reducing the effort required for repetitive application tasks.</li>
+                        </ul>
+                    </a>
+                    <a href="/Experience/RA.html" class="box">
+                        <div class="icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="topic">Residential Assistant</div>
+                        <h3 class="sub-heading">Carthage College | 2024</h3>
+                        <ul>
+                            <li>Planned various community-building programs each month, such as game nights, study halls, and resourceful informal events.</li>
+                            <li>Helped and assisted residents as needed.</li>
+                            <li>Enforced residential life policies by actively building relationships and understanding.</li>
+                            <li>Conducted duty patrols, monitored the halls to ensure safety and orderly conduct, and kept track of building maintenance.</li>
+                            <li>Created various informal bulletin boards for residents.</li>
+                            <li>Contributed in meetings to help build a prosperous residential community.</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Experience Section-->
+        <section class="Hobbies" id="Hobbies">
+        <div class="content">
+            <div class="title"><span>Extracurricular Activities</span></div>
+            <div class="boxes">
+                <a href="/Extra/Fitness.html" class="box">
+                    <div class="icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="topic">Fitness</div>
+                    <h3 class="sub-heading-fitness">∞</h3>
+                    <ul>
+                        <li>Developed mental resilience and discipline through overcoming health challenges and injuries.</li>
+                        <li>Gained a deep understanding of weightlifting, muscle composition, and fitness goal-setting.</li>
+                        <li>Learned the importance of patience, time management, and consistent effort in achieving long-term goals.</li>
+                        <li>Gained the ability to encourage and support others in their fitness journeys by creating personalized workout plans.</li>
+                    </ul>
+                </a>
+                <a href="/Extra/Barber.html" class="box">
+                    <div class="icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <div class="topic">Barbering</div>
+                    <h3 class="sub-heading">2022-Now</h3>
+                    <ul>
+                        <li>Built a loyal client base of 20-30+ students through word-of-mouth referrals and personalized service.</li>
+                        <li>Gained hands-on experience managing a small business, balancing schoolwork with client appointments and business growth.</li>
+                        <li>Leveraged digital marketing and social media to expand my reach and attract new clients, demonstrating the power of effective online promotion.</li>
+                        <li>Optimized user experience by enabling extension management via Chrome’s side panel API.</li>
+                        <li>Refined hair cutting and barbering techniques over time, ensuring high-quality, consistent results.</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="Contact" id="Contact">
+        <div class="content">
+            <div class="title"><span>Contact Me</span></div>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> Phone: <a href="tel:+17734439084">+1 (773) 443-9084</a></p>
+              <p><i class="fas fa-envelope"></i> Email: <a href="mailto:brandonr26.br@gmail.com">brandonr26.br@gmail.com</a></p>
+              <p><i class="fas fa-globe"></i> Website: <a href="https://brandonrobinson.dev" target="_blank">brandonrobinson.dev</a></p>
+            </div>
+            <div class="survey-container">
+              <p>If you're willing to help with my current studies, please take a quick survey:</p>
+              <a href="YOUR_GOOGLE_FORM_LINK" target="_blank" class="survey-button">Take the Survey</a>
+            </div>
+          </div>
+        <div class="text">
+            <span>Created By <a href="#"> Brandon</a></span>
+        </div>
+    </footer>
+
+        <script>
+            function hamburg() {
+                document.querySelector('.dropdown').style.transform = 'translateY(0)';
+            }
+            
+            function cancel() {
+                document.querySelector('.dropdown').style.transform = 'translateY(-500px)';
+            }
+        </script>
+    </body>
+</html>
