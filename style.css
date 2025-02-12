@@ -350,7 +350,7 @@ p{
     }
 
     p {
-        width: 100%;
+        width: 415px;
         margin: 0 -20px; 
         font-size: 1.6rem;
         line-height: 1.8;
@@ -402,6 +402,16 @@ p{
 
     .home .home-content h1{
         font-size: 2.2rem;
+    }
+
+    p {
+        width: 415px;
+        margin: 0 -20px; 
+        font-size: 1.6rem;
+        line-height: 1.8;
+        color: white;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     span{
