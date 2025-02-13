@@ -267,7 +267,7 @@ p{
         opacity: 1;
         pointer-events: visible;
         position: absolute; 
-        top: 10px; 
+        top: -25px; 
         right: 26px; 
         transform: translateX(-10px); 
         font-size: 3rem; 
