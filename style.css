@@ -73,6 +73,7 @@ nav{
 
 .nav-container .links{
     display: flex;
+    position:relative;
 }
 
 .nav-container .links a{
@@ -109,8 +110,8 @@ nav{
     z-index: 100;
     position: absolute;
     top: 0;
-    transform: translateY(-500px);
-    width: 100%;
+    left: 0;
+    width: 100vw; /* Ensures it spans the entire viewport width */
     height: auto;
     backdrop-filter: blur(4px) brightness(40%);
     box-shadow: 0 0 20px black;
