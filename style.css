@@ -862,3 +862,40 @@ footer .text span a:hover{
         padding-top: 40px; 
     }
 }
+
+
+.view-more {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .bouncy-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .bouncy-text:hover {
+    color: #333; /* Change color on hover */
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+ /*mobile*/
+  @media (max-width: 800px){
+    .view-more {
+        display: block;
+    }
+}
+  
