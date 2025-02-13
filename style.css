@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
 
 *{
-    margin: 0; /*may not include*/
-    padding: 0; /*may not include*/
+    margin: 0; 
+    padding: 0; 
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif; /* may channg font */
+    font-family: 'Poppins', sans-serif; 
 }
 
 html{
@@ -444,7 +444,7 @@ p{
 /* Education Section */
 .Education {
     padding: 50px 0;
-    background: #000; /* Black background */
+    background: #000; 
     text-align: center;
   }
   
@@ -476,7 +476,7 @@ p{
   
   .Education .box:hover {
     transform: scale(1.05);
-    background: black; /* black hover color */
+    background: black;  
   }
   
   .Education .box .icon {
@@ -526,7 +526,7 @@ p{
   /* Experience */
   .Experience {
     padding: 50px 0;
-    background: #000; /* Black background */
+    background: #000; 
     color: white;
     text-align: center;
   }
@@ -597,9 +597,9 @@ p{
     color: #ccc;  /* Keeps the text color the same as the surrounding text */
     text-decoration: none;
   }
-  
+  /*  hover color */
   .Experience a ul li:hover {
-    color: #333;  /* Optional: Customize the hover color */
+    color: #333;  
   }
   
   .Experience .box h3 {
@@ -639,7 +639,7 @@ p{
   /* Hobbies (Extracurricular Activities) */
 .Hobbies {
     padding: 50px 0;
-    background: #000; /* Black background */
+    background: #000; 
     color: white;
     text-align: center;
 }
@@ -718,11 +718,11 @@ p{
   }
   
 .Hobbies a ul li:hover {
-    color: #333;  /* Optional: Customize the hover color */
+    color: #333;  /* Delete */
 }
 
 .Hobbies .box .sub-heading-fitness {
-    font-size: 30px; /* Adjust as needed */
+    font-size: 30px; 
 }
 
 /* Assigning grid positions */
@@ -734,7 +734,7 @@ p{
     grid-area: box2;
 }
 
-/* Responsive Design */
+
 @media (max-width: 992px) {
     .Hobbies .boxes {
         grid-template-areas: 
@@ -853,3 +853,11 @@ footer .text span a:hover{
     }
 }
 
+@media (max-width: 500px)
+{
+    footer .text span{
+        display: block;
+        margin-top: 60px;  
+        padding-top: 40px; 
+    }
+}
