@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJJVPCCFEM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YJJVPCCFEM');
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Zephyrs Strength and Performance Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            body {
+                background: #000;
+                color: white;
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            .container {
+                max-width: 850px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .icon {
+                height: 50px;
+                width: 50px;
+                background: white;
+                border-radius: 50%;
+                display: inline-block;
+                font-size: 24px;
+                line-height: 50px;
+                color: #000;
+                margin: 20px 0;
+            }
+
+            .topic {
+                font-size: 36px;
+                font-weight: bold;
+                margin: 20px 0;
+                color: white;
+            }
+
+
+            .sub-heading {
+                font-size: 20px;
+                font-weight: bold;
+                margin: 30px 0 10px;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            /* Slideshow */
+            .slideshow-container {
+                position: relative;
+                max-width: 850px;
+                margin: 20px auto 30px auto;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            }
+            .slides {
+                display: none;
+                position: relative;
+                width: 100%;
+                border-radius: 12px;
+            }
+            .slides img {
+                width: 100%;
+                border-radius: 12px;
+                display: block;
+            }
+            .caption {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0,0,0,0.7);
+                color: #ff5e00;
+                font-size: 2.5em;
+                font-weight: bold;
+                padding: 18px 36px;
+                text-align: center;
+                letter-spacing: 2px;
+                border-radius: 16px;
+                opacity: 1;
+                z-index: 2;
+                pointer-events: none;
+                transition: opacity 0.5s;
+            }
+            .caption.pop {
+                animation: captionPop 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+            }
+            .caption.hide {
+                opacity: 0 !important;
+                transition: opacity 0.5s;
+            }
+            @keyframes captionPop {
+                0% { opacity: 0; transform: translate(-50%, -60%) scale(0.7); }
+                60% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+                100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+            }
+            .fade {
+                animation-name: fade;
+                animation-duration: 2.5s;
+            }
+            @keyframes fade {
+                from { opacity: 0.4 }
+                to { opacity: 1 }
+            }
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 12px 16px;
+                margin-top: -22px;
+                color: #fff;
+                font-weight: bold;
+                font-size: 28px;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                background: rgba(255,94,0,0.7);
+                transition: background 0.3s;
+                z-index: 2;
+            }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev {
+                left: 0;
+            }
+            .prev:hover, .next:hover {
+                background: rgba(255,94,0,1);
+            }
+            .dot-container {
+                text-align: center;
+                margin-top: 10px;
+            }
+            .dot {
+                height: 12px;
+                width: 12px;
+                margin: 0 5px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active {
+                background-color: #ff5e00;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.8;
+                color: #ccc;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            ul {
+                text-align: left;
+                color: #ccc;
+                line-height: 1.8;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 600px) {
+                .topic {
+                    font-size: 28px;
+                }
+                .sub-heading {
+                    font-size: 18px;
+                }
+                p, ul {
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </head>
+
+    <body class="container">
+        <div class="icon">
+            <i class="fas fa-dumbbell"></i>
+        </div>
+
+
+
+        <h1 class="topic">Zephyrs Strength and Performance</h1>
+        <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 18px;">
+            <a href="https://zephyrsstrengthandperformance.com" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #ff5e00; font-weight: bold; font-size: 18px;">
+                <img src="images/ZSP-logo1.png" alt="ZSP Logo" style="height:32px; width:32px; margin-right:8px; border-radius:6px; background:#fff; box-shadow:0 0 4px #ff5e00;">
+                zephyrsstrengthandperformance.com
+            </a>
+        </div>
+
+        <!-- Slideshow Section -->
+        <div class="slideshow-container">
+            <div class="slides fade"><img src="images/home.png" alt="ZSP Homepage"><div class="caption">Home Page</div></div>
+            <div class="slides fade"><img src="images/stories.png" alt="ZSP Stories Page"><div class="caption">Stories Section</div></div>
+            <div class="slides fade"><img src="images/footer.png" alt="ZSP Footer Page"><div class="caption">Footer Section</div></div>
+            <div class="slides fade"><img src="images/about.png" alt="ZSP About Page"><div class="caption">About Page</div></div>
+            <div class="slides fade"><img src="images/packages.png" alt="ZSP Packages Page"><div class="caption">Packages Page</div></div>
+            <div class="slides fade"><img src="images/contact.png" alt="ZSP Contact Page"><div class="caption">Contact Page</div></div>
+            <div class="slides fade"><img src="images/register.png" alt="ZSP Register Page"><div class="caption">Register Page</div></div>
+            <div class="slides fade"><img src="images/login.png" alt="ZSP Login Page"><div class="caption">Login Page</div></div>
+            <div class="slides fade"><img src="images/reset.png" alt="ZSP Reset Page"><div class="caption">Reset Password Page</div></div>
+            <div class="slides fade"><img src="images/dashboard.png" alt="ZSP Dashboard Page"><div class="caption">Dashboard Page</div></div>
+            <div class="slides fade"><img src="images/athlete.png" alt="ZSP Athlete Page"><div class="caption">Athlete Section</div></div>
+            <div class="slides fade"><img src="images/schedule.png" alt="ZSP Schedule Page"><div class="caption">Schedule Section</div></div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span> 
+            <span class="dot" onclick="currentSlide(9)"></span> 
+            <span class="dot" onclick="currentSlide(10)"></span> 
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            let slideTimer = null;
+            let captionTimeout = null;
+            let lastSlideIndex = null;
+            showSlides(slideIndex, true);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n, true);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n, true);
+            }
+
+            function showSlides(n, forcePop = false) {
+                let i;
+                let slides = document.getElementsByClassName("slides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                    let cap = slides[i].querySelector('.caption');
+                    if (cap) { cap.classList.remove('pop','hide'); cap.style.opacity = 1; }
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                // Only pop caption if slide changed or forced
+                let caption = slides[slideIndex-1].querySelector('.caption');
+                if (caption) {
+                    if (captionTimeout) clearTimeout(captionTimeout);
+                    if (lastSlideIndex !== slideIndex || forcePop) {
+                        caption.classList.remove('hide');
+                        caption.classList.add('pop');
+                        setTimeout(() => { caption.classList.remove('pop'); }, 500);
+                        captionTimeout = setTimeout(() => { caption.classList.add('hide'); }, 2000);
+                    } else {
+                        // If not a new slide, keep caption hidden
+                        caption.classList.add('hide');
+                    }
+                }
+                lastSlideIndex = slideIndex;
+                if (slideTimer) clearTimeout(slideTimer);
+                slideTimer = setTimeout(function() { showSlides(slideIndex + 1); }, 3500);
+            }
+        </script>
+
+        <h3 class="sub-heading">Project Overview</h3>
+        <p>
+            Zephyrs Strength and Performance (ZSP) is a full scale booking and management system I designed and developed for an athletic training company. 
+            The goal was to create a platform that handles everything from athlete registration and scheduling to payment processing and admin management all while maintaining a smooth and intuitive user experience.
+        </p>
+
+        <h3 class="sub-heading">Client Discovery & Planning</h3>
+        <p>
+            Before development began, I met with the client to define their goals, visual preferences, and hosting plans. We discussed their target audience, preferred color schemes, and media assets while identifying the features they needed most such as role-based logins, booking automation, and integrated payments.
+        </p>
+        <ul>
+            <li>Determined hosting (Render, Vercel, or WordPress alternatives)</li>
+            <li>Outlined site structure, visuals, and branding direction</li>
+            <li>Identified data collection needs and automation features</li>
+            <li>Researched database and backend service options (AWS, Supabase)</li>
+        </ul>
+
+        <h3 class="sub-heading">Database & Backend Setup</h3>
+        <p>
+            The first step was designing a robust database schema using PostgreSQL. I created tables for users, athletes, coaches, admins, bookings, timeslots, orders, and payments to ensure clean data management.
+            I then used Express.js and Node.js to connect the database, manage API routes, and authenticate users securely with JWT based sessions.
+        </p>
+
+        <h3 class="sub-heading">Development Timeline</h3>
+        <p><strong>April:</strong> Built the database schema and initial structure, including role based login and registration for athletes, coaches, and admins.</p>
+        <p><strong>May:</strong> Developed user dashboards (Athlete, Coach, Admin) and integrated Calendly for booking management.</p>
+        <p><strong>June:</strong> Optimized dashboards, added authentication logic, and refined sidebar functionality.</p>
+        <p><strong>July:</strong> Focused on main site pages added background video to the home page, built About and Contact pages, and connected dashboard data to display athlete stories and packages.</p>
+        <p><strong>August:</strong> Implemented Stripe payments with embedded checkout and created a dynamic thank-you page with responsive feedback features.</p>
+        <p><strong>September:</strong> Integrated Mailjet for automated emails (receipts, login notifications, contact messages) and launched SEO optimization with meta tags, sitemap.xml, and robots.txt.</p>
+
+        <h3 class="sub-heading">Project Management Approach</h3>
+        <p>
+            I adopted an Agile/Scrum workflow, organizing development into sprints and tracking tasks with Jira. 
+            This helped structure progress, prioritize features, and record bugs while keeping the client updated on every milestone. 
+            Feedback sessions were scheduled regularly to adjust features and UI direction efficiently.
+        </p>
+
+        <h3 class="sub-heading">Key Tools & Technologies</h3>
+        <ul>
+            <li>Frontend: HTML, CSS, JavaScript</li>
+            <li>Backend: Node.js, Express.js</li>
+            <li>Database: PostgreSQL</li>
+            <li>Integrations: Stripe, Calendly, Mailjet</li>
+            <li>Hosting: Render</li>
+            <li>Project Management: Jira (Agile/Scrum)</li>
+        </ul>
+
+        <h3 class="sub-heading">Challenges & Lessons Learned</h3>
+        <p>
+            One major challenge was adjusting project features in response to client feedback particularly when switching from a custom calendar system to integrating Calendly. 
+            It taught me the importance of flexibility, continuous communication, and early prototype testing to minimize large scale changes later on.
+        </p>
+        <p>
+            Another valuable lesson was managing full payment integration through Stripe while preventing double bookings and ensuring data integrity across dashboards a crucial component for any client facing system.
+        </p>
+
+        <h3 class="sub-heading">Final Results</h3>
+        <p>
+            The completed system provides an efficient platform for coaches, athletes, and administrators to manage bookings, payments, and communication seamlessly. 
+            It delivers a full stack solution that is scalable, secure, and designed for real world business operations.
+        </p>
+
+        <h3 class="sub-heading">Reflection</h3>
+        <p>
+            Developing ZSP from the ground up strengthened my technical and project management skills. 
+            It taught me how to balance backend logic, frontend design, and client communication to produce a professional grade product. 
+            This project reinforced my passion for full stack development and building platforms that solve real business challenges.
+        </p>
+    </body>
+</html>
