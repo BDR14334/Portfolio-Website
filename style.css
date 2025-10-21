@@ -899,3 +899,40 @@ footer .text span a:hover{
     }
 }
   
+.back-home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background: #fff;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.45em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.back-home-btn:hover {
+    background: #91908b;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+  .back-home-btn {
+      padding: 7px 12px;
+      font-size: 1.35em;
+      top: 20px;
+      left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .back-home-btn {
+      padding: 7px 12px;
+      font-size: 1.2em;
+      top: 20px;
+      left: 20px;
+  }
+}
